@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">Blood Donor Finder</string>
+    <string name="bloodGroup">Enter Blood Group</string>
+    <string name="institution">Enter specific organisation (Optional)</string>
+    <string name="district">Which district you want to search</string>
+    <string name="specificArea">Enter Specific Area</string>
+    <string name="searchButton">Search</string>
+    <string name="title_activity_show_donor">ShowDonor</string>
+    <string name="hello_world">Hello Square World!</string>
+    <string-array name="bloodType">
+        <item>A+</item>
+        <item>A-</item>
+        <item>B+</item>
+        <item>B-</item>
+        <item>O+</item>
+        <item>O-</item>
+        <item>AB+</item>
+        <item>AB-</item>
+    </string-array>
+    <string name="loginEmail">Enter Your Email</string>
+    <string name="loginPassword">Enter Password</string>
+    <string name="register">Register</string>
+    <string name="donor_list">Donor List</string>
+    <string name="add_date">Add Date</string>
+    <string name="enter_dob">Enter your date of birth</string>
+    <string name="enter_email">Enter Email</string>
+    <string name="enter_your_name">Enter Your Name</string>
+    <string name="register_as_a_donor">Register as a Donor</string>
+    <string name="donor_details">Donor Details</string>
+    <string name="donor_name">Donor Name</string>
+    <string name="blood_donor_finder">Blood Donor Finder</string>
+    <string name="full_name">Full Name</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="donor_present_address">Donor present Address</string>
+    <string name="present_address">Present Address</string>
+    <string name="donor_permanent_address">Donor Permanent Address</string>
+    <string name="where_you_can_donate_blood">Where you can donate blood</string>
+    <string name="date_of_birth">Date of Birth:</string>
+    <string name="last_date_of_donation">Last Date of Donation</string>
+    <string name="add_last_donation_date">Add Last Donation Date</string>
+    <string name="date_of_total_donation_date">Date of total Donation Date</string>
+    <string name="save">Save</string>
+    <string name="home">Home</string>
+    <string name="login">Log In</string>
+    <string name="logout">Log Out</string>
+    <string name="available_status">Not Available</string>
+    <string name="notavailable_Status">Available</string>
+</resources>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="45dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:text="@string/blood_donor_finder"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:gravity="right">
+
+
+        <Button
+            android:id="@+id/loginLogout"
+            android:layout_width="95dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:layout_gravity="right"
+            android:onClick="loginButtonPressed"
+            android:text="@string/login"/>
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:onClick="registeButtonPressed"
+            android:text="@string/register"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:background="#DA7D7D"
+                android:textAlignment="center"
+                android:text="@string/bloodGroup"/>
+
+            <Spinner
+                android:id="@+id/bloodGroupID"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:outlineAmbientShadowColor="#DA7D7D"
+                android:layout_height="wrap_content"
+                />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/organisationID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#DA7D7D"
+            android:ems="10"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginTop="15dp"
+            android:textAlignment="center"
+            android:inputType="textPersonName"
+            android:hint="@string/institution" />
+
+        <EditText
+            android:id="@+id/districtNameID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#DA7D7D"
+            android:layout_marginTop="15dp"
+            android:ems="10"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:inputType="textPersonName"
+            android:hint="@string/district" />
+        <EditText
+            android:id="@+id/specificAreaID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#DA7D7D"
+            android:layout_marginTop="15dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:hint="@string/specificArea" />
+        <Button
+            android:id="@+id/searchButton"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginTop="15dp"
+            android:textAlignment="center"
+            android:background="@drawable/button_design"
+            android:onClick="searchDonor"
+            android:text="@string/searchButton" />
+
+    </LinearLayout>
+
+</LinearLayout>

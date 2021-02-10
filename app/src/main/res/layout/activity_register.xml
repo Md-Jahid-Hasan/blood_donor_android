@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp"
+    android:background="#D3D3D3"
+    tools:context=".Register">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/register_as_a_donor"
+        android:textSize="41dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginBottom="40dp"/>
+
+
+    <EditText
+        android:id="@+id/nameField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_marginTop="15dp"
+        android:background="#BAB3B3"
+        android:hint="@string/enter_your_name" />
+
+    <EditText
+        android:id="@+id/registerEmailAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:background="#BAB3B3"
+        android:layout_marginTop="15dp"
+        android:inputType="textEmailAddress"
+        android:hint="@string/enter_email"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:gravity="center">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="20dp"
+            android:background="#BAB3B3"
+            android:text="@string/bloodGroup"/>
+
+        <Spinner
+            android:id="@+id/bloodGroupID"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/editTextPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:background="#BAB3B3"
+        android:layout_marginTop="15dp"
+        android:inputType="phone"
+        android:hint="Enter Your Phone Number"/>
+
+    <EditText
+        android:id="@+id/editTextArea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:background="#BAB3B3"
+        android:layout_marginTop="15dp"
+        android:hint="Enter Specific area where you can donate blood"/>
+
+    <EditText
+        android:id="@+id/editTextPresentAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:background="#BAB3B3"
+        android:inputType="textPersonName"
+        android:layout_marginTop="15dp"
+        android:hint="Enter Your Present Address" />
+
+    <EditText
+        android:id="@+id/editTextPermanentAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:background="#BAB3B3"
+        android:layout_marginTop="15dp"
+        android:inputType="textPersonName"
+        android:hint="Enter Permanent Address" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="3">
+        <EditText
+            android:id="@+id/dobEditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:layout_marginRight="15dp"
+            android:background="#BAB3B3"
+            android:layout_marginTop="15dp"
+            android:layout_weight="2"
+            android:hint="@string/enter_dob"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="15dp"
+            android:onClick="showDatePickerOption"
+            android:text="@string/add_date"/>
+    </LinearLayout>
+
+
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:textSize="20dp"
+        android:background="#BAB3B3"
+        android:inputType="textPassword"
+        android:hint="Create/Enter a Password"/>
+
+    <EditText
+        android:id="@+id/editTextPassword2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:textSize="20dp"
+        android:background="#BAB3B3"
+        android:inputType="textPassword"
+        android:hint="Again Enter the same Password"/>
+
+    <Button
+        android:id="@+id/register"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_gravity="center"
+        android:onClick="doRegister"
+        android:text="@string/register" />
+
+</LinearLayout>
